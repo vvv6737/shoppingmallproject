@@ -105,32 +105,32 @@
 				<br>
 				<div class="row">
 					<div class="col-sm-3">
-						<a onclick="location.href='/product/productdetail/15'"> <img
+						<a onclick="location.href='/product/productdetail/7'"> <img
 							src="/static/images/휠라.jpg"
 							class="img-responsive" style="width: 100%" alt="Image">
 						</a>
 						<p>
-							<a onclick="location.href='/product/productdetail/15'">휠라</a>
+							<a onclick="location.href='/product/productdetail/7'">휠라</a>
 						</p>
 					</div>
 
 					<div class="col-sm-3">
-						<a onclick="location.href='/product/productdetail/16'"> <img
+						<a onclick="location.href='/product/productdetail/9'"> <img
 							src="/static/images/셔츠c.jpg" class="img-responsive"
 							style="width: 100%" alt="Image">
 						</a>
 						<p>
-							<a onclick="location.href='/product/productdetail/16'">셔츠</a>
+							<a onclick="location.href='/product/productdetail/9'">셔츠</a>
 						</p>
 					</div>
 
 					<div class="col-sm-3">
-						<a onclick="location.href='/product/productdetail/17'"> <img
+						<a onclick="location.href='/product/productdetail/6'"> <img
 							src="/static/images/mtm.jpg" class="img-responsive"
 							style="width: 100%" alt="Image">
 						</a>
 						<p>
-							<a onclick="location.href='/product/productdetail/17'">맨투맨</a>
+							<a onclick="location.href='/product/productdetail/6'">맨투맨</a>
 						</p>
 					</div>
 
@@ -165,12 +165,12 @@
 					</div>
 
 					<div class="col-sm-3">
-						<a onclick="location.href='/product/productdetail/21'"> <img
+						<a onclick="location.href='/product/productdetail/5'"> <img
 							src="/static/images/shoes.jpg" class="img-responsive"
 							style="width: 100%" alt="Image">
 						</a>
 						<p>
-							<a onclick="location.href='/product/productdetail/21'">신발</a>
+							<a onclick="location.href='/product/productdetail/5'">신발</a>
 						</p>
 					</div>
 

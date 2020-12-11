@@ -92,21 +92,21 @@
 							<img src="/static/images/프로필1.jpg" alt="모델1" width="100"
 								height="550">
 							<div class="carousel-caption">
-								<p>좋은 퀄리티의 제품과 보존도가 좋은 중고 제품들</p>
+								<p>합리적인 가격</p>
 							</div>
 						</div>
 						<div class="item">
 							<img src="/static/images/프로필2.jpg" alt="모델4" width="100"
 								height="550">
 							<div class="carousel-caption">
-								<p>만들고 다른 사람에게도 자신의 캐릭터를 팔아보자</p>
+								<p>흔하지 않은 유니크함</p>
 							</div>
 						</div>
 						<div class="item">
 							<img src="/static/images/프로필3.jpg" alt="모델3" width="100"
 								height="550">
 							<div class="carousel-caption">
-								<p>그저 팔기만 하지말고 자작 캐릭터의 설정특징을 알리고 팬으로 만들어 보자!</p>
+								<p>이것이 바로 순수 멋 그자체</p>
 							</div>
 						</div>
 					</div>

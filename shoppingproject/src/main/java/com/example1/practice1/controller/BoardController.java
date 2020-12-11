@@ -75,24 +75,27 @@ public class BoardController {
 //	}
 
 	@RequestMapping("/insertProc")
-	private String boardInsertProc(HttpServletRequest request) throws Exception {
+	private String boardInsertProc(@ModelAttribute BoardDTO boardDTO, HttpServletRequest request,HttpSession session,Model model) throws Exception {
 
 		logger.info("insertproc get........");
-		BoardDTO boardDTO = new BoardDTO();
+		MemberDTO memberDTO = new MemberDTO();
+		
+		String writer = (String) session.getAttribute("userId"); 
 		
 		logger.info("subject : " + request.getParameter("subject") );
+		logger.info("writer : " + request.getParameter("writer"));
 		
 		//입력할 창의 값들을 요청한다.
 		boardDTO .setSubject(request.getParameter("subject"));
 		boardDTO .setContent(request.getParameter("content"));
-		boardDTO .setWriter(request.getParameter("writer"));
+		//boardDTO .setWriter(request.getParameter("writer"));
+		
+		memberDTO.setUserId(writer);
 		
 		service.insertBoard(boardDTO);
-		
-		
 		return "redirect:/board/boardList";
 		
-		}//end - private String boardInsertProc(HttpServletRequest request) throws Exception 
+		}//end - private String boardInsertProc(HttpServletRequest request) throws Exception
 
 	// 게시글 목록보기
 	@RequestMapping(value = "/boardList", method = { RequestMethod.GET, RequestMethod.POST })

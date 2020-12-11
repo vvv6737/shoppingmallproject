@@ -12,9 +12,6 @@
 <meta charset="UTF-8">
 <title>상품 상세 정보</title>
 <style>
-.container{
-	margin-top: 5%;
-}
 #list1 {
 	float: left;
 	margin: 20px;
