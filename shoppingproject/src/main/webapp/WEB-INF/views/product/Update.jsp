@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>게시글 업데이트</title>
+<title>업데이트</title>
 </head>
 <div class="container-fluid">
 	<h2 align="left">게 시 글 업데이트</h2>

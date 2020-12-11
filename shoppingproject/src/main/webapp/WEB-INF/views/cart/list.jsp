@@ -37,11 +37,11 @@
 				<th>이미지</th>
 				<th>상품명</th>
 				<th>가격</th>
-				<th>수량</th>
-				<!--  <th>구매아이디</th>-->
+				<th>구매 수량</th>
 				<th>일자</th>
 				<th></th>
 			</tr>
+			
 		</thead>
 			<c:forEach var="cart" items="${list}">
 			<tr>
@@ -49,42 +49,32 @@
 				<td><img src="/static/upload/${cart.productimageName}" alt="" ></td>
 				<td>${cart.productname}</td>
 				<td>${cart.productprice}</td>
-				<td>${cart.productsalescnt}</td>
+				<td><select name="수량~">
+					<c:forEach begin="1" end="10" var="i">
+						<option value="${i}">${i}</option>
+					</c:forEach>
+				</select></td>
 				<!-- <td>${member.getUserId()}</td> -->
 				<td><fmt:formatDate value="${cart.cartdate}" pattern="yyyy년 MM월 dd일"/></td>
 				<td><button type="button" class="btn btn-danger" onclick="location.href='/cart/cartDelete/${cart.cartno}',alert('삭제 완료')">삭제</button>
 				<button class="btn btn-warning"  onclick="location.href='/cart/cartDelete/${cart.cartno}',alert('구매 완료')">구매 하기</button></td>
 			</tr>
-				
-			</c:forEach>
-		<tbody>
-		</tbody>
-	</table>
+				 <c:set var="sum" value="${sum + (cart.productprice * cart.productsalescnt )}"/>
+		</c:forEach>
 	
-
+				<tr class="danger">
+					<td colspan="7" align="right">
+						<b><font size="+1">총 구매금액 :<fmt:formatNumber pattern="###,###,###" value="${sum}" />원</font></b>
+					</td>
+				</tr>
+	
+<tbody>
+</tbody>
+	
+</table>
+	
 </div>
 
 </body>
 </html>
 </layoutTag:layout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

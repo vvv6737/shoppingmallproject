@@ -9,10 +9,23 @@
 <head>
 <meta charset="UTF-8">
 <title>자유게시판</title>
+<style>
+.navbar-inverse .narbar-nav > .active > a,
+.navbar-inverse .narbar-nav > .active > a:focus,
+.navbar-inverse .narbar-nav > .active > a:hover{
+
+	color:rgb(255,255,255);
+	background-color:red
+}
+	ul{list-style:none; float:center; padding:6px;}
+
+	
+</style>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<link rel="stylesheet" href="//code.jquey.com/ui/1.12.1/themes/base/jquey-ui.css">
 </head>
 <body>
+
 <div class="container-fluid">
 	<h2 align="left">자 유 게 시 판</h2>
 		<c:if test="${member != null }">

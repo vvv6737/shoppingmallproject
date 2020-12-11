@@ -77,14 +77,7 @@
 		style="font-weight: bold">
 		<a href="/product/productlist/1" class="w3-bar-item w3-button">Shirts</a>
 		<a href="/product/productlist/2" class="w3-bar-item w3-button">Dresses</a>
-		<a onclick="myAccFunc()" href="/product/productlist/3"
-			class="w3-bar-item w3-button">Jeans</a>
-		<div id="demoAcc"
-			class="w3-bar-block w3-hide w3-padding-large w3-medium">
-			<a href="/product/productlist/3"
-				class="w3-bar-item w3-button w3-light-grey"><i
-				class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-		</div>
+		<a href="/product/productlist/3" class="w3-bar-item w3-button">Jeans</a>
 		<a href="/product/productlist/4" class="w3-bar-item w3-button">Jackets</a>
 		<a href="/product/productlist/5" class="w3-bar-item w3-button">Gymwear</a>
 		<a href="/product/productlist/6" class="w3-bar-item w3-button">Blazers</a>
@@ -112,82 +105,82 @@
 				<br>
 				<div class="row">
 					<div class="col-sm-3">
-						<a onclick="location.href='/product/productdetail/2'"> <img
-							src="https://www.itnk.co.kr/news/photo/202010/65304_28792_3141.jpg"
+						<a onclick="location.href='/product/productdetail/15'"> <img
+							src="/static/images/휠라.jpg"
 							class="img-responsive" style="width: 100%" alt="Image">
 						</a>
 						<p>
-							<a onclick="location.href='/product/productdetail/2'">휠라</a>
+							<a onclick="location.href='/product/productdetail/15'">휠라</a>
 						</p>
 					</div>
 
 					<div class="col-sm-3">
-						<a onclick="location.href='/product/productdetail/1'"> <img
+						<a onclick="location.href='/product/productdetail/16'"> <img
 							src="/static/images/셔츠c.jpg" class="img-responsive"
 							style="width: 100%" alt="Image">
 						</a>
 						<p>
-							<a onclick="location.href='/product/productdetail/1'">셔츠</a>
+							<a onclick="location.href='/product/productdetail/16'">셔츠</a>
 						</p>
 					</div>
 
 					<div class="col-sm-3">
-						<a onclick="location.href='/product/productdetail/4'"> <img
+						<a onclick="location.href='/product/productdetail/17'"> <img
 							src="/static/images/mtm.jpg" class="img-responsive"
 							style="width: 100%" alt="Image">
 						</a>
 						<p>
-							<a onclick="location.href='/product/productdetail/4'">맨투맨</a>
+							<a onclick="location.href='/product/productdetail/17'">맨투맨</a>
 						</p>
 					</div>
 
 					<div class="col-sm-3">
-						<a onclick="location.href='/product/productdetail/2'"> <img
-							src="https://image.musinsa.com/images/specialissue_img/2020090712095100000021490.jpg"
+						<a onclick="location.href='/product/productdetail/18'"> <img
+							src="/static/images/겨울코트.jpg"
 							class="img-responsive" style="width: 100%" alt="Image">
 						</a>
 						<p>
-							<a onclick="location.href='/product/productdetail/2'">겨울코트</a>
+							<a onclick="location.href='/product/productdetail/18'">겨울코트</a>
 						</p>
 					</div>
 
 					<div class="col-sm-3">
-						<a onclick="location.href='/product/productdetail/2'"> <img
+						<a onclick="location.href='/product/productdetail/19'"> <img
 							src="/static/images/mtm2.jpg" class="img-responsive"
 							style="width: 100%" alt="Image">
 						</a>
 						<p>
-							<a onclick="location.href='/product/productdetail/2'">목폴라 맨투맨</a>
+							<a onclick="location.href='/product/productdetail/19'">목폴라 맨투맨</a>
 						</p>
 					</div>
 
 					<div class="col-sm-3">
-						<a onclick="location.href='/product/productdetail/2'"> <img
+						<a onclick="location.href='/product/productdetail/20'"> <img
 							src="/static/images/Coatc.jpg" class="img-responsive"
 							style="width: 100%" alt="Image">
 						</a>
 						<p>
-							<a onclick="location.href='/product/productdetail/2'">골덴코트</a>
+							<a onclick="location.href='/product/productdetail/20'">골덴코트</a>
 						</p>
 					</div>
 
 					<div class="col-sm-3">
-						<a onclick="location.href='/product/productdetail/3'"> <img
+						<a onclick="location.href='/product/productdetail/21'"> <img
 							src="/static/images/shoes.jpg" class="img-responsive"
 							style="width: 100%" alt="Image">
 						</a>
 						<p>
-							<a onclick="location.href='/product/productdetail/3'">신발</a>
+							<a onclick="location.href='/product/productdetail/21'">신발</a>
 						</p>
 					</div>
 
 					<div class="col-sm-3">
-						<a onclick="location.href='/product/productdetail/5'"> <img
+						<a onclick="location.href='/product/productdetail/22'"> <img
 							src="/static/images/accc.jpg" class="img-responsive"
 							style="width: 100%" alt="Image">
 						</a>
 						<p>
-							<a onclick="location.href='/product/productdetail/5'">악세사리</a>
+							<a onclick="location.href='/product/productdetail/22'">악세사리</a>
 						</p>
 					</div>
 				</div>
@@ -388,10 +381,34 @@
 
 
 <script>
-	var availableTags = [ '셔츠', '반팔 셔츠', '긴팔 셔츠', 'shirts', 'Shirts', '드레스',
-			'dress', 'Dress', '바지', '긴바지', '반바지', 'jeans', 'Jeans', '자켓',
-			'jackets', 'Jackets', '블레이져', 'blazers', '신발', '운동화', '구두', '샌들',
-			'Shoes', 'shoes' ];
+	var availableTags = [ '셔츠', 
+						'반팔 셔츠', 
+						'긴팔 셔츠', 
+						'shirts', 
+						'Shirts',
+						'티셔츠', 
+						'드레스',
+						'dress', 
+						'Dress', 
+						'코트',
+						'바지', 
+						'긴바지', 
+						'반바지', 
+						'jeans', 
+						'Jeans', 
+						'자켓',
+						'jackets', 
+						'Jackets', 
+						'블레이져', 
+						'blazers', 
+						'신발', 
+						'운동화', 
+						'구두', 
+						'샌들',
+						'Shoes', 
+						'shoes' 
+						'악세사리'
+						];
 </script>
 <script>
 	$(document).ready(function() {

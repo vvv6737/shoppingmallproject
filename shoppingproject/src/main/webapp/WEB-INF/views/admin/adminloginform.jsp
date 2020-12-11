@@ -9,12 +9,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>관리자로그인</title>
+<title>Insert title here</title>
 
 </head>
 <body>
 <div class="container">
-	<h2>Manager Login</h2>
+	<h2>관리자 로그인</h2>
 		<form class="form-horizontal" method="post" action="/admin/adminloginform">
 			<!-- 로그인을 하지않고 들어온 경우 : 로그인을 입력할수 있게 한다. -->
 			<c:if test="${admin == null }">

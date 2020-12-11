@@ -11,9 +11,13 @@
 <link rel="icon" type="image/x-icon" href="/static/images/aland.jpg" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta charset="UTF-8">
-<title>상품보기</title>
+<title>상품목록</title>
 
 <style>
+.w3-sidebar a {
+	font-family: "Roboto", sans-serif
+}
+
 .btn {
 	padding: 8px 10px;
 	background-color: #333;
@@ -41,46 +45,40 @@
 .pagination {
 	margin-left: 46%;
 }
-.w3-sidebar a {
-	font-family: "Roboto", sans-serif
-}
 </style>
 </head>
 <body>
 	<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top"
-	style="z-index: 3; width: 120px" id="mySidebar">
-	<div class="w3-container w3-display-container w3-padding-16">
-		<i onclick="w3_close()"
-			class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-		<h3 class="w3-wide">
-			<b>SHOP</b>
-		</h3>
-	</div>
-	<div class="w3-padding-64 w3-large w3-text-grey"
-		style="font-weight: bold">
-		<a href="/product/productlist/1" class="w3-bar-item w3-button">Shirts</a> 
-		<a href="/product/productlist/2" class="w3-bar-item w3-button">Dresses</a> 
-		<a onclick="myAccFunc()" href="/product/productlist/3" class="w3-bar-item w3-button">Jeans</a>
-		<div id="demoAcc"class="w3-bar-block w3-hide w3-padding-large w3-medium">
-		<a href="/product/productlist/3" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-	</div>
-		<a href="/product/productlist/4" class="w3-bar-item w3-button">Jackets</a>
-		<a href="/product/productlist/5" class="w3-bar-item w3-button">Gymwear</a> 
-		<a href="/product/productlist/6" class="w3-bar-item w3-button">Blazers</a> 
-		<a href="/product/productlist/7" class="w3-bar-item w3-button">Shoes</a>
-	</div>
-</nav>
+	<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top"
+		style="z-index: 3; width: 120px" id="mySidebar">
+		<div class="w3-container w3-display-container w3-padding-16">
+			<i onclick="w3_close()"
+				class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+			<h3 class="w3-wide">
+				<b>SHOP</b>
+			</h3>
+		</div>
+		<div class="w3-padding-64 w3-large w3-text-grey"
+			style="font-weight: bold">
+			<a href="/product/productlist/1" class="w3-bar-item w3-button">Shirts</a>
+			<a href="/product/productlist/2" class="w3-bar-item w3-button">Dresses</a>
+			<a href="/product/productlist/3" class="w3-bar-item w3-button">Jeans</a>
+			<a href="/product/productlist/4" class="w3-bar-item w3-button">Jackets</a>
+			<a href="/product/productlist/5" class="w3-bar-item w3-button">Gymwear</a>
+			<a href="/product/productlist/6" class="w3-bar-item w3-button">Blazers</a>
+			<a href="/product/productlist/7" class="w3-bar-item w3-button">Shoes</a>
+		</div>
+	</nav>
 
 	<div class="container">
 		<div class="row">
-		
+
 			<div class="col-sm-14">
-			<br>
-	<div class=" text-center">
-	<img src="/static/images/best_main.png" alt="모델1">
-	</div>
-	<br>
+				<br>
+				<div class=" text-center">
+					<img src="/static/images/best_main.png" alt="모델1">
+				</div>
+				<br>
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
@@ -125,63 +123,63 @@
 					</a>
 				</div>
 			</div>
-				
-				
-				
+
+
+
 			<div class="col-sm-13">
-			<br>
-			<div class=" text-center">
-			<img src="/static/images/category.png">
-			</div>
-			<br>
+				<br>
+				<div class=" text-center">
+					<img src="/static/images/category.png">
+				</div>
+				<br>
 				<c:forEach var="product" items="${list}">
 					<div class="col-sm-3">
 						<div class="thumbnail">
 							<img src="/static/upload/${product.productimageName}"
 								alt="이미지 업로드">
-								<ul>
-								  <li>제품명 : ${product.productname}</li>
-								  <li>가격 : ${product.productprice} 원</li>
-								</ul>
-							<button class="btn" data-toggle="modal" data-target="#myModal" 
-							onclick="location.href='/product/productdetail/${product.productno}'">Click</button>
+							<ul>
+								<li>제품명 : ${product.productname}</li>
+								<li>가격 : ${product.productprice} 원</li>
+							</ul>
+							<button class="btn" data-toggle="modal" data-target="#myModal"
+								onclick="location.href='/product/productdetail/${product.productno}'">Click</button>
 						</div>
 					</div>
 				</c:forEach>
 			</div>
 		</div>
 	</div>
-	
-	
-		<div id="paginationBox" >
-			<ul class="pagination">
-				<c:if test="${productpagination.prev}">
 
-					<li class="page-item"><a class="page-link" href="#"
-						onClick="fn_prev('${productpagination.page}', '${productpagination.range}', '${productpagination.rangeSize}')">Previous</a></li>
 
-				</c:if>
-				<c:forEach begin="${productpagination.startPage}"
-					end="${pagination.endPage}" var="idx">
+	<div id="paginationBox">
+		<ul class="pagination">
+			<c:if test="${productpagination.prev}">
 
-					<li
-						class="page-item <c:out value="${productpagination.page == idx ? 'active' : ''}"/> "><a
-						class="page-link" href="#"
-						onClick="fn_pagination('${idx}', '${productpagination.range}', '${productpagination.rangeSize}')">
-							${idx} </a></li>
+				<li class="page-item"><a class="page-link" href="#"
+					onClick="fn_prev('${productpagination.page}', '${productpagination.range}', '${productpagination.rangeSize}')">Previous</a></li>
 
-				</c:forEach>
+			</c:if>
+			<c:forEach begin="${productpagination.startPage}"
+				end="${pagination.endPage}" var="idx">
 
-				<c:if test="${pagination.next}">
+				<li
+					class="page-item <c:out value="${productpagination.page == idx ? 'active' : ''}"/> "><a
+					class="page-link" href="#"
+					onClick="fn_pagination('${idx}', '${productpagination.range}', '${productpagination.rangeSize}')">
+						${idx} </a></li>
 
-					<li class="page-item"><a class="page-link" href="#"
-						onClick="fn_next('${productpagination.range}','${productpagination.range}', '${productpagination.rangeSize}')">Next</a></li>
+			</c:forEach>
 
-				</c:if>
+			<c:if test="${pagination.next}">
 
-			</ul>
+				<li class="page-item"><a class="page-link" href="#"
+					onClick="fn_next('${productpagination.range}','${productpagination.range}', '${productpagination.rangeSize}')">Next</a></li>
 
-		</div>
+			</c:if>
+
+		</ul>
+
+	</div>
 
 	<script>
 		$(document).ready(
@@ -215,7 +213,7 @@
 							});
 				})
 	</script>
-<script>
+	<script>
 		//이전 버튼 이벤트
 
 		function fn_prev(page, range, rangeSize) {
@@ -266,11 +264,9 @@
 
 		}
 	</script>
-
 </layoutTag:layout>
 </body>
 </html>
-
 
 <!-- layoutTag를 적용하므로 bootstrap.jsp 파일이 필요 없어졌다. -->
 <%--== : eq
@@ -279,3 +275,18 @@
 > : gt
 <= : le
 >= : ge --%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

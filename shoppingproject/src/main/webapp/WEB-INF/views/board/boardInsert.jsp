@@ -8,9 +8,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>boardInsert.jsp</title>
+<title>게시글 작성</title>
 </head>
 <body>
+
 <div class="container-fluid">
 	<h2 align="left">게 시 글 작 성</h2>
 	<form class="form-horizontal" action="/board/insertProc" method="post" enctype="multipart/form-data">
@@ -26,13 +27,12 @@
 			<label for="content">내 용</label>
 			<textarea rows="4" cols="100" class="form-control" id="content" name="content" placeholder="내용을 입력하세요"></textarea>
 			
-			
 			<button type="submit" class="btn btn-primary">등 록</button>
 			
 		</div>
-		
 	</form>
 </div>
+
 </body>
 </html>
 </layoutTag:layout>

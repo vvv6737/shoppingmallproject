@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>boardUpdate.jsp</title>
+<title>게시글 작성</title>
 </head>
 <div class="container-fluid">
 	<h2 align="left">게 시 글 작 성</h2>
