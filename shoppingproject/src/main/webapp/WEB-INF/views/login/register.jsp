@@ -11,16 +11,9 @@
 <meta charset="UTF-8">
 <title>회원가입</title>
 <style>
-	*{
-		font-size: 16px;
-		font-family : Consolas,sans-serif;
-		
-	}
 	#id_Check{
 		text-align:center;
 	}
-
-		
 </style>
 </head>
 <body>
