@@ -1,23 +1,21 @@
 package com.example1.practice1.domain;
 
-
-
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
 
 public class MemberDTO {
-	private String userId;
-	private String userPw;
-	private String userName;
-	private String userBirth;
-	private String address01;
-	private String address02;
-	private String tel1;
-	private String tel2;
-	private String tel3;
-	private String userEmail;
+	private String userId; //아이디
+	private String userPw; //비밀번호
+	private String userName; //유저 이름
+	private String userBirth; //유저 생년월일
+	private String address01; //주소
+	private String address02; //주소2
+	private String tel1; //010, 011 등등
+	private String tel2; //가운데 번호
+	private String tel3; //끝 번호
+	private String userEmail; //유저 이메일
 	
 	
 	public MemberDTO() {}

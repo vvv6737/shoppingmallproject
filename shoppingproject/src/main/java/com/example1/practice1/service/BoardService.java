@@ -48,7 +48,6 @@ public class BoardService {
 						article.setNewMark(true);
 					}
 				}
-				
 				return list;
 			}
 	//게시글 총 갯수
@@ -76,7 +75,6 @@ public class BoardService {
 		logger.info("service delete.... " + boardno);
 		return mapper.delete(boardno);
 	}
-	
 	//게시글 조회수
 	public int boardHit(int boardno) throws Exception{
 		logger.info("service hit ..." + boardno);
