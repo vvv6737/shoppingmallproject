@@ -28,8 +28,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		PRODUCTNO, PRODUCTIMAGEFILE, productimageName, productimageOriName, productimageUrl, PRODUCTNAME,PRODUCTPRICE, PRODUCTSALESCNT, PRODUCTCID
 	FROM
 			PRODUCTTABLE	
-	order by PRODUCTNO desc
-	<!-- LIMIT #{startList}, #{listSize} --> <!-- 최종본인데 집에서는 구동이안되서 일단 보류 -->		
+	order by PRODUCTNO desc		
 	</select>
 	
 	<select id="ProductcateList" resultType="com.example1.practice1.domain.ProductDTO">
