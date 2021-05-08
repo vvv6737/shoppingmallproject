@@ -68,7 +68,7 @@ public class ProductController {
 				String destinationFileName;
 				// fileUrl = "uploadFiles 폴더의 위치";
 				// upload 폴더의 위치 확인 : upload 우클릭 -> Properties -> Resource - > Location 복사(각자의 폴더위치를 넣는다.)
-				String productimageUrl = "C:\\Users\\TJ\\Desktop\\shoppingproject\\src\\main\\resources\\static\\upload\\";
+				String productimageUrl = "C:\\Users\\Administrator\\Desktop\\shoppingproject\\src\\main\\static\\upload\\";
 				                          
 					do {
 						destinationFileName = RandomStringUtils.randomAlphanumeric(32) + "." + fileNameExtension;

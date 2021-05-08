@@ -47,14 +47,10 @@ public class BoardController {
 	BoardService service;
 	
 
-
-
 	// 게시글 등록GET
 	@RequestMapping(value = "/boardInsert", method = { RequestMethod.GET, RequestMethod.POST })
 	private String boardInsertForm() {
 		System.out.println("BoardController insert......");
-		
-		
 		return "/board/boardInsert";
 	}// end - private String boardInsertForm()
 	/*
@@ -111,8 +107,8 @@ public class BoardController {
 		pageMaker.setTotalCount(service.listCount(scri));
 		model.addAttribute("pageMaker", pageMaker);
 		
-//		List<BoardVO> search = service.searchList(scri);
-//		model.addAttribute("search", search);
+		//List<BoardVO> search = service.searchList(scri);
+		//model.addAttribute("search", search);
 		
 		return "/board/boardList";
 	}// end - private String boardList(Model model,@ModelAttribute("scri")

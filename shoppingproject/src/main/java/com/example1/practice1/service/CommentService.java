@@ -22,7 +22,6 @@ public class CommentService {
 	private static final Logger logger = LoggerFactory.getLogger(CommentController.class);
 	
 	
-	
 	//댓글등록
 	public int commentInsertService(CommentDTO comment) throws Exception{
 		logger.info("commentInsertService .....");

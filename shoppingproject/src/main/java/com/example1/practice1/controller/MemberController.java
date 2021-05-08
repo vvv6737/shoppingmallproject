@@ -187,10 +187,4 @@ public class MemberController {
 			return "redirect:/login/login";
 			
 		}//end - private String postDelete(MemberDTO memberDTO, HttpSession session, RedirectAttributes rttr) throws Exception
-		
-		
-	
-	
-	
-
 }//end - public class ProjectController 

@@ -16,11 +16,7 @@ import javax.websocket.server.ServerEndpoint;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-/**
- * 
- * @author Geonhee Cho
- *
- */
+
 @ServerEndpoint("/websocket/{username}")
 @Component
 public class WebSocketServer {

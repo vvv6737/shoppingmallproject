@@ -103,9 +103,7 @@
 		</form>
 	</div>
 </div>
-    
-    
-    
+
 <script>
 $(document).ready(function(){
         $('.btn-success').click(function() {
@@ -113,13 +111,6 @@ $(document).ready(function(){
         });
       }); 
 </script>
-
-
-	
-	
-	
-
-
 
 </body>
 </html>

@@ -24,6 +24,4 @@ public class SearchCriteria extends Criteria{
 		return "SearchCriteria [searchType=" + searchType + ", keyword=" + keyword + "]";
 	}
 	
-	
-	
 }

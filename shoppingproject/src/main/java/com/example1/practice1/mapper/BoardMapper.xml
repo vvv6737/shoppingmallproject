@@ -10,7 +10,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 INSERT	INTO	BOARDTABLE
 			(BOARDNO, 		SUBJECT, 	CONTENT, 	WRITER, 	REGDATE, BOARDHIT)
 	VALUES	(#{boardno},	#{subject},	#{content},	#{writer},	now(), #{boardhit} )
-
 </insert>
 
  <!--게시글 목록보기   
@@ -70,10 +69,7 @@ WHERE boardno > 0  <!-- 참이라는 의미,bno가 0이상인 데이터들을 �
 SELECT * 
 FROM BOARDTABLE
 WHERE boardno = ${boardno}
-
 </select>
-
-
 
 <!-- bno에 해당하는 게시글의 정보를 수정한다. -->
 <update id="update" parameterType="com.example1.practice1.domain.BoardDTO">
@@ -89,10 +85,7 @@ WHERE	boardno	= #{boardno}
 DELETE FROM
 BOARDTABLE
 WHERE boardno = #{boardno}
-
 </delete>
-
-
 
 <!-- 파일업로드 목록보기 -->
 <select id="uploadFileList" resultType="com.example1.practice1.domain.FileDTO" >
