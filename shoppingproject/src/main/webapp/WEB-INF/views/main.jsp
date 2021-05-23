@@ -41,7 +41,7 @@
 }
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
+@media only screen and (max-device-width: 1300px) {
 	.bgimg-1 {
 		background-attachment: scroll;
 		min-height: 400px;
