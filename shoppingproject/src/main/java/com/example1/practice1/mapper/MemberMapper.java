@@ -3,7 +3,7 @@ package com.example1.practice1.mapper;
 import org.springframework.stereotype.Repository;
 import com.example1.practice1.domain.MemberDTO;
 
-@Repository("com.example1.practice1.mapper.	MemberMapper")
+@Repository("com.example1.practice1.mapper.MemberMapper")
 public interface MemberMapper {
 	
 	//아이디 중복검사
