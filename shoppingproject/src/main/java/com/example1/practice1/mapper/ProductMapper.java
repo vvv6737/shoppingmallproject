@@ -8,8 +8,6 @@ import com.example1.practice1.domain.Pagination;
 import com.example1.practice1.domain.ProductCategoryiDTO;
 import com.example1.practice1.domain.ProductDTO;
 
-
-
 @Repository("com.example1.practice1.mapper.ProductMapper")
 public interface ProductMapper {
 	
