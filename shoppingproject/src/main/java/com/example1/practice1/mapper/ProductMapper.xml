@@ -85,9 +85,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	SELECT *
 	FROM PRODUCTTABLE
 	WHERE productname  LIKE CONCAT('%',#{searchName},'%')
-	
-	
-	
 	</select>
 	
 </mapper>
