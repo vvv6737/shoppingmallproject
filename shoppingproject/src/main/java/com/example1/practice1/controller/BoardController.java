@@ -53,22 +53,6 @@ public class BoardController {
 		System.out.println("BoardController insert......");
 		return "/board/boardInsert";
 	}// end - private String boardInsertForm()
-	/*
-	 * //게시글 등록POST
-	 * 
-	 * @RequestMapping(value="/boardInsert",method=RequestMethod.POST) private
-	 * String postBoardInsert(BoardVO vo) throws Exception{
-	 * 
-	 * logger.info("insert post...." + vo); service.insertBoard(vo); return
-	 * "/board/boardList"; }//end - private String postBoardInsert
-	 */
-//	//파일 등록
-//	@RequestMapping("/uploadInsert")
-//	private String uploadInsert(FileDTO file, Model model) throws Exception{
-//		logger.info("uploadInsert get...");
-//		
-//		return "/board/uploadInsert";
-//	}
 
 	@RequestMapping("/insertProc")
 	private String boardInsertProc(@ModelAttribute BoardDTO boardDTO, HttpServletRequest request,HttpSession session,Model model) throws Exception {

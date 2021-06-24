@@ -12,21 +12,6 @@ INSERT	INTO	BOARDTABLE
 	VALUES	(#{boardno},	#{subject},	#{content},	#{writer},	now(), #{boardhit} )
 </insert>
 
- <!--게시글 목록보기
-<select id="boardList" resultType="com.example1.practice1.domain.BoardDTO">
-SELECT *
-FROM BOARDTABLE
-ORDER BY boardno DESC
-
-</select>-->
-
-<!-- 파일올리기
-<insert id="fileInsert" parameterType="com.example1.practice1.domain.FileDTO" useGeneratedKeys="true">
-INSERT INTO files
-	(FNO, BNO, FILENAME, FILEORINAME, FILEURL)
-VALUES (#{fno}, #{bno}, #{fileName} , #{fileOriName}, #{fileUrl})
-</insert>-->
-
 <!-- 게시글 페이징 -->
 <select id="boardList" resultType="com.example1.practice1.domain.BoardDTO" parameterType="com.example1.practice1.domain.Criteria">
 SELECT BOARDNO, 
@@ -54,8 +39,8 @@ WHERE boardno > 0  <!-- 참이라는 의미,bno가 0이상인 데이터들을 �
 <include refid="search"></include>
 </select>
 
-<!-- 검색기능 -->
-<sql id="search">
+	<!-- 검색기능 -->
+	<sql id="search">
 		<if test="searchType != null">
 			<if test="searchType == 's'.toString()">AND SUBJECT LIKE CONCAT('%',#{keyword},'%')</if>
 			<if test="searchType == 'c'.toString()">AND CONTENT LIKE CONCAT('%',#{keyword},'%')</if>

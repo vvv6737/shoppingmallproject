@@ -26,7 +26,7 @@
 </head>
 <body>
 
-<div class="container-fluid">
+<div class="container">
 	<h2 align="left">자 유 게 시 판</h2>
 		<c:if test="${member != null }">
 		<button class="btn btn-primary" onclick="location.href='/board/boardInsert'">글쓰기</button>
@@ -49,8 +49,8 @@
 		</thead>
 		<c:if test="${list.size() <= 0}">
 			<tr>
-				<td colspan="5" align="center">
-				<strong>검색 결과가 없습니다!!</strong>
+				<td colspan="6" align="center">
+					<strong>검색 결과가 없습니다!!</strong>
 				</td>
 			</tr>
 		</c:if>
