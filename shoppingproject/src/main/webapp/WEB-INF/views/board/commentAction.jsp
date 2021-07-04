@@ -105,9 +105,6 @@ function commentUpdate(replyno, replytext){
 	str += '</c:if>';
 	//str += '<span class="input-group-btn"><button class="btn btn-warning" type="button" onclick="mCommentServiceUpdate('+replyno+')";>수정</button></span>';
 	//str += '</div>';
-	
-
-
 
 	$('.commentContent' + replyno).html(str);
 }
