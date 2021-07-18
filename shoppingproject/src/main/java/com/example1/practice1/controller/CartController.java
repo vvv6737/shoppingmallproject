@@ -30,7 +30,6 @@ public class CartController {
 	//카트 목록 보여주기
 	@RequestMapping(value = "/list", method = { RequestMethod.GET, RequestMethod.POST })
 	private String cartList(CartDTO cartDetailDTO, Model model) throws Exception {
-		
 		logger.info("cartlist : " + cartDetailDTO);
 		model.addAttribute("list", cartService.cartListService());
 		return "/cart/list";
@@ -42,17 +41,9 @@ public class CartController {
 	//@RequestMapping(value = "/insertCart", method = RequestMethod.POST)
 	private String insertCart(CartDTO cartDTO, Model model, HttpServletRequest request,HttpSession session) throws Exception {
 		logger.info("insertCart()....");
-		
-		//CartDTO cartDTO = new CartDTO();
-		
-		//cartDTO.setCartuserid(cartuserid);
 		logger.info("cartDTO : " + cartDTO);
 		String cartuserid = request.getParameter("cartuserid");
 		logger.info("cartuserid : " + cartuserid);
-		
-		////cartService.insertCart(cartDTO);
-	
-	
 		
 		model.addAttribute("inserCart", cartService.insertCart(cartDTO));
 		
@@ -67,6 +58,7 @@ public class CartController {
 		logger.info("delete" + cartno);
 		cartService.cartDeleteService(cartno);
 		return "redirect:/cart/list";
+		
 	}//end - private String cartDelete(@PathVariable int cartno, Model model) throws Exception
 	
 	
