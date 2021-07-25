@@ -176,9 +176,7 @@
 					onClick="fn_next('${productpagination.range}','${productpagination.range}', '${productpagination.rangeSize}')">Next</a></li>
 
 			</c:if>
-
 		</ul>
-
 	</div>
 
 	<script>
